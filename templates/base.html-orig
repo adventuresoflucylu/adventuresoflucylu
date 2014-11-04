@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>The Avdventures of Lucy Lu Books</title>
+	<meta name="description" content="Childrens books about a cute button nosed Basset Hound Named Lucy Lu and the adventures she has.">
+	<style>
+body  {
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	height: 100%;
+	color: #000000;
+}
+
+	header {
+		color: white;
+		padding: 20px;
+		text-align: center;
+		overflow: hidden;
+		border-radius: 30px;
+//		margin-bottom: 20px;
+		}
+		
+/*
+	header nav {
+		float: right;
+		background-color: #FFC;
+		border-radius: 10px;
+		color: #000;
+		padding: 3px;
+		border: 2px solid #000;
+		}
+*/
+		
+       
+    nav {
+            height: 40px;
+        }
+    
+    ul.parent-menu {
+            width: 645px;
+            margin: 0px auto;
+				border-radius: 10px;
+            
+        }
+        
+    ul.sub-menu {
+            position: relative;
+            width: 155px;
+            left: -4px; top: -38px;
+            z-index: -1;
+        }
+        
+    ul.parent-menu li, ul.sub-menu li {
+            list-style-type: none;
+            width: 150px;
+            height: 30px;
+            margin: 0px 4px;
+            
+           
+        }
+        
+    ul.parent-menu > li {
+            position: relative;
+            float: left;
+            z-index: 10;
+        } 
+        
+    ul.sub-menu li {
+            position: absolute;
+            top: 0px; left: 0px;
+            z-index: -1;
+            -webkit-transition: top 500ms ease-in-out;
+            -moz-transition: top 500ms ease-in-out;
+            -o-transition: top 500ms ease-in-out;
+            -ms-transition: top 500ms ease-in-out;
+            transition: top 500ms ease-in-out;
+        }
+        
+   ul.parent-menu li:hover ul.sub-menu li:nth-child(1) {
+            top: 35px; left: 0px;
+        }
+        
+    ul.parent-menu li:hover ul.sub-menu li:nth-child(2) {
+            top: 70px; left: 0px;
+        }
+        
+    ul.parent-menu li:hover ul.sub-menu li:nth-child(3) {
+            top: 105px; left: 0px;
+        }
+        
+    ul.parent-menu li:hover ul.sub-menu li:nth-child(4) {
+            top: 140px; left: 0px;
+        }
+        
+    ul.parent-menu li:hover ul.sub-menu li:nth-child(5) {
+            top: 175px; left: 0px;
+        }
+        
+    a {
+            display: block;
+            width: 150px;
+            height: 30px;
+            line-height: 30px;
+            text-decoration: none;
+            text-align: center;
+            background-color: #EEE;
+            font-size: 9pt;
+            border: 2px solid #000;
+            border-radius: 5px;
+            margin-top: 4px;
+        }
+        
+    a:hover {
+            background-color: #FF9;
+        }
+
+	section {
+		background: white;
+		border: 4px solid #EEE;
+		margin-top: 10px;
+		border-radius: 20px;
+		padding: 5px;
+		overflow: hidden;
+		}
+		
+	h2 {
+		color: #009;
+		font-family: verdana;
+		}
+		
+	h3 {
+		color: #090;
+		}
+		
+	h4 {
+		color: #009;
+		font-family: verdana;
+		}
+		
+	section p {
+		font-family: verdana;
+		text-indent: 2em;
+		}
+
+#body-container {
+	border-color: #000000;
+	border-style-left: solid;
+	color: #000000;
+	margin: 0 auto;
+	text-align: left;
+	width: 65em;
+}
+
+#book-container {
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+#col1 {
+  overflow: hidden;
+  float: left;
+  width: 33%;
+  position: relative;
+}
+#col2 {
+  float: left;
+  width: 33%;
+  position: relative;
+  left: .5%;
+}
+#col3 {
+ // overflow: hidden;
+  float: right;
+  width: 33%;
+  position: relative;
+}
+#footer {
+//		background: white;
+  background: orange;
+		border: 4px solid #EEE;
+		margin-top: 30px;
+		border-radius: 20px;
+		overflow: hidden; 
+//	position: relative;  
+	width: 100%;
+//	height: 15px; /* .push must be the same height as .footer */
+//	bottom: 0;
+}
+
+	p.product-description {
+		text-indent: 0em;
+		}
+		
+	p.subtitle {
+		letter-spacing: 2em;
+		text-transform: uppercase;
+		}
+	
+	figure {
+		width: 250;
+		text-align: center;
+		float: right;
+		margin: 0px;
+		}
+		
+	figure img {
+		width: 150px;
+		height: 150px;
+		border-radius: 20px;
+		}
+		
+	figcaption {
+		position: relative;
+		top: -35px;
+		font-weight: bold;
+		color: #FFF;
+		text-shadow: 0px 0px 6px #000;
+		}
+		
+	</style>
+
+</head>
+<body>
+<div id="body-container">
+	<header>
+		<div id="wrapper">
+			<div id="headerwrap">
+				<img style="width: 100%; height: 225px;border-radius: 20px;" alt="Adv Lucy Lu header image" src="/static/images/LucyLu_WebHeader.jpg"/>
+			</div>
+		</div>
+	</header>
+
+	<nav>
+		<ul class="parent-menu">
+			<li><a href="/">home</a></li>
+  			<li><a href="#">My Books</a>
+  				<ul class="sub-menu">
+  					<li><a href="thebigjob.html">Book 1: The Big Job</a></li>
+  					<li><a href="booboobear.html">sBook 2: Boo Boo Bear</a></li>
+  					<li><a href="tbd.html">Book 3: To Be Determained</a></li>
+  				</ul>
+			</li>
+  			<li><a href="holder.html">Basset Hounds</a>
+  				<ul class="sub-menu">
+  					<li><a href="holder.html">Basset Hound the breede</a></li>
+  					<li><a href="holder.html">Basset Hound rescues </a></li>
+  				</ul>
+			</li>
+  			<li><a href="adventuresoflucylu-about.html">About Me(I mean Us) </a>
+  				<ul class="sub-menu">
+  					<li><a href="lucylu-about.html">Me (of course)</a></li>
+  					<li><a href="maxwell-about.html">Maxwell (My Boo Boo Bear)</a></li>
+  					<li><a href="mommyndaddy.html">Mommy and Daddy</a></li>
+  				</ul>
+			</li>
+  		</ul>
+	</nav>
+	
+	<section>
+	<h2 style="font-size: 19px; text-align: center;">Come read and see the adventures of the cuties button nose Basset Hound you'll ever meet.</h2>
+	</section>
+	
+		<div id="book-container">
+			<div id="col1">
+			<!-- Column one start -->
+			<section>
+				<h3>Book 1: The Big Job: </h3>
+				{% load staticfiles %}
+					<figure>
+						<img src="/static/images/AdvLucyLu-cover.jpg" alt="Book cover for The Adventures of Lucy Lu "/>
+					</figure>
+	
+					<p>
+						Come see the the begining a great adventure of a cute little button-nose Basset Hound named Lucy Lu
+					</p>
+			</section>
+			</div> <!-- col1 end -->
+			<div id="col2">
+				<!-- Column two start -->
+				<section>
+					<h3>Book 2: Boo Boo Bear : </h3>
+					{% load staticfiles %}
+						<figure>
+							<img src="/static/images/AdvLucyLu-cover.jpg" alt="Book cover for The Adventures of Lucy Lu "/>
+						</figure>
+	
+						<p>
+							Come see how Lucy Lu meets her life long friend Maxwell "Boo Boo Bear".
+						</p>
+				</section>
+			</div> <!-- col2 end -->
+			<div id="col3">
+				<!-- Column three start -->
+				<section>
+					<h3>Book 3: To be determained : </h3>
+					{% load staticfiles %}
+						<figure>
+							<img src="/static/images/AdvLucyLu-cover.jpg" alt="Book cover for The Adventures of Lucy Lu "/>
+						</figure>
+	
+						<p>
+							Were are working on this. So adventures to choose from!
+						</p>
+				</section>
+			</div> <!-- col3 end -->
+
+		</div> <!-- book Container end -->
+
+			<div id="footer">
+            	<p>
+						The Adventures of Lucy Lu &copy; 2010
+					</p>
+			</div> <!-- footer end -->
+
+	</div> <!-- body-container end -->
+
+</body>
+</html>

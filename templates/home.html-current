@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+   <section>
+   <h2 style="font-size: 19px; text-align: center;">Come read and see the adventures of the cuties button nose Basset Hound you'll ever meet.</h2>
+   </section>
+
+      <div id="book-container">
+         <div id="col1">
+         <!-- Column one start -->
+         <section>
+            <h3>Book 1: The Big Job: </h3>
+            {% load staticfiles %}
+               <figure>
+                  <img src="/static/images/AdvLucyLu-cover.jpg" alt="Book cover for The Adventures of Lucy Lu "/>
+               </figure>
+
+               <p>
+                  Come see the the begining a great adventure of a cute little button-nose Basset Hound named Lucy Lu
+               </p>
+         </section>
+         </div> <!-- col1 end -->
+         <div id="col2">
+            <!-- Column two start -->
+            <section>
+               <h3>Book 2: Boo Boo Bear : </h3>
+               {% load staticfiles %}
+                  <figure>
+                     <img src="/static/images/AdvLucyLu-cover.jpg" alt="Book cover for The Adventures of Lucy Lu "/>
+                  </figure>
+
+                  <p>
+                     Come see how Lucy Lu meets her life long friend Maxwell "Boo Boo Bear".
+                  </p>
+            </section>
+         </div> <!-- col2 end -->
+         <div id="col3">
+            <!-- Column three start -->
+            <section>
+               <h3>Book 3: To be determained : </h3>
+               {% load staticfiles %}
+                  <figure>
+                     <img src="/static/images/AdvLucyLu-cover.jpg" alt="Book cover for The Adventures of Lucy Lu "/>
+                  </figure>
+
+                  <p>
+                     Were are working on this. So adventures to choose from!
+                  </p>
+            </section>
+         </div> <!-- col3 end -->
+
+      </div> <!-- book Container end -->
+
+         <div id="footer">
+               <p>
+                  The Adventures of Lucy Lu &copy; 2010
+               </p>
+         </div> <!-- footer end -->
+
+{% endblock content %}

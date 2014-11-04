@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+         <div id="col1">
+         	<!-- Column one start -->
+         	<section>
+            	<h3>Book 1: The Big Job: </h3>
+            	{% load staticfiles %}
+               	<figure>
+							<a href="/books/thebigjob" style="border: none; height: 150px;">
+                  		<img src="/static/images/AdvLucyLu-cover.jpg" alt="Book cover for The Adventures of Lucy Lu "/>
+							</a>
+               	</figure>
+
+               	<p>
+                  	Come see the the begining a great adventure of a cute little button-nose Basset Hound named Lucy Lu
+               	</p>
+         	</section>
+         </div> <!-- col1 end -->
+         <div id="col2">
+            <!-- Column two start -->
+            <section>
+               <h3>Book 2: Boo Boo Bear : </h3>
+               {% load staticfiles %}
+                  <figure>
+							<a href="books/booboobear" style="border: none; height: 150px;">
+                     	<img src="/static/images/AdvLucyLu-cover.jpg" alt="Book cover for The Adventures of Lucy Lu "/>
+							</a>
+                  </figure>
+
+                  <p>
+                     Come see how Lucy Lu meets her life long friend Maxwell "Boo Boo Bear".
+                  </p>
+            </section>
+         </div> <!-- col2 end -->
+         <div id="col3">
+            <!-- Column three start -->
+            <section>
+               <h3>Book 3: To be determained : </h3>
+               {% load staticfiles %}
+                  <figure>
+							<a href="books/tbd" style="border: none; height: 150px;">
+								<img src="/static/images/AdvLucyLu-cover.jpg" alt="Book cover for The Adventures of Lucy Lu "/>
+							</a>
+                  </figure>
+
+                  <p>
+                     Were are working on this. So many adventures to choose from!
+                  </p>
+            </section>
+         </div> <!-- col3 end -->
+{% endblock content %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div id="books">
+	<!-- The Big Job start -->
+		<section>
+			<h3>Book 1: The Big Job: </h3>
+			{% load staticfiles %}
+			<figure>
+				<a href="/books/thebigjob" style="border: none; height: 150px;">
+					<img src="/static/images/AdvLucyLu-cover.jpg" alt="Book cover for The Adventures of Lucy Lu "/>
+				</a>
+			</figure>
+			<p>
+				Come see the the begining a great adventure of a cute little button-nose Basset Hound named Lucy Lu
+			</p>
+		</section>
+	</div> <!-- The Big Job end -->
+{% endblock content %}
