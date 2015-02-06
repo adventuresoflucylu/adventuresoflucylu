@@ -11,14 +11,11 @@ urlpatterns = patterns(
 #	url(r'^thebreed TemplateView.as_view(template_name='/templates/holder.html')),
 #	url(r'^$', TemplateView.as_view(template_name='home.html')),
 
-	url(r'^$',	'bassethounds.views.bholder'),
-	url(r'lucylu-about',	'bassethounds.views.holder'),
-	url(r'maxwell-about',	'bassethounds.views.holder'),
-	url(r'mommyndaddy-about',	'bassethounds.views.holder'),
-#	url(r'^$',	'bassethounds.views.bholder'),
-#	url(r'me',	'bassethounds.views.me'),
-#	url(r'booboobear',	'bassethounds.views.booboobear'),
-#	url(r'mommyndaddy',	'bassethounds.views.mommyndaddy'),
+	url(r'^$',	'aboutus.views.aboutus'),
+	url(r'lucylu',	'aboutus.views.lucylu'),
+	url(r'mytime',	'aboutus.views.mytime'),
+	url(r'maxwell',	'aboutus.views.maxwell'),
+	url(r'mommyndaddy',	'aboutus.views.mommyndaddy'),
 )
 
 # Uncomment the next line to serve media files in dev.

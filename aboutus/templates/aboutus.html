@@ -1,0 +1,42 @@
+{% extends "advbase.html" %}
+
+{% block content %}
+	<div id="aboutus">
+	<!-- Column three start -->
+		<aside id="right_news">
+			<h4>Basset Hounds News:</h4>
+			{% if user.is_authenticated %}
+				<p>Welcome {{ user.username }}</p>
+			{% else %}
+				<h3>Not logged in {{ user.username }}!</h3>
+			{% endif %}
+
+			<figure>
+<!--				<a href="#" style="border: none; height: 25; border-radius: 20px;"> -->
+				<a href="#" >
+					<img src="/static/images/lucylu-pup.jpg" alt="Lucy Lu puppy"/>
+				</a>
+			</figure>
+			<p>
+				Were are working on this. 
+			<br>
+				Will post news here!
+			</p>
+		</aside>
+
+		<section id=books>
+			<h3>Aboutus: B Holder Page : </h3>
+			{% load staticfiles %}
+			<figure>
+				<a href="/books/tbd" style="border: none; height: 150px;">
+					<img src="/static/images/AdvLucyLu-cover.jpg" alt="Book cover for The Adventures of Lucy Lu "/>
+				</a>
+			</figure>
+			<p>
+				Were are working on this. 
+			<br>
+				So many adventures to choose from!
+			</p>
+		</section>
+	</div> <!-- col3 end -->
+{% endblock content %}

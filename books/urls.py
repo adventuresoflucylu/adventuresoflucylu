@@ -9,8 +9,9 @@ urlpatterns = patterns(
 	'',
 	#url(r'^$', TemplateView.as_view(template_name='home.html')),
 
-	url(r'^$', 				'books.views.bholder'),
+	url(r'^$', 				'books.views.books'),
 	url(r'thebigjob',  	'books.views.thebigjob'),
+	url(r'goingtoohio', 	'books.views.goingtoohio'),
 	url(r'booboobear', 	'books.views.booboobear'),
 	url(r'tbd', 			'books.views.tbd'),
 )

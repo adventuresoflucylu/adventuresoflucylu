@@ -1,19 +1,6 @@
-{% extends "base.html" %}
+{% extends "advbase.html" %}
 
 {% block content %}
-	<div id="books">
-	<!-- Column three start -->
-		<section>
-			<h3>Book 3: To be determained : </h3>
-			{% load staticfiles %}
-			<figure>
-				<a href="/books/tbd" style="border: none; height: 150px;">
-					<img src="/static/images/AdvLucyLu-cover.jpg" alt="Book cover for The Adventures of Lucy Lu "/>
-				</a>
-			</figure>
-			<p>
-				Were are working on this. So many adventures to choose from!
-			</p>
-		</section>
-	</div> <!-- col3 end -->
-{% endblock content %}
+{% include "tbds.html" %}
+{% endblock %}
+

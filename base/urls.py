@@ -22,8 +22,12 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
 	url(r'^admin/', include(admin.site.urls)),
-	url(r'^tinymce/', include('books.urls')),
-#	url(r'^accounts/', include('allauth.urls')),
+	url(r'^tinymce/', include('tinymce.urls')),
+	url(r'^account/', include('allauth.urls')),
+	url(r'^register/$', 'users.views.RegisterBookUser'),
+	url(r'^login/$', 'users.views.LoginRequest'),
+	url(r'^logout/$', 'users.views.LogoutRequest'),
+	url(r'^profile/$', 'users.views.Profile'),
 	url(r'^$', include('home.urls')),
 	url(r'^books/', include('books.urls')),
 	url(r'^bassethounds/', include('bassethounds.urls')),
@@ -33,7 +37,7 @@ urlpatterns = patterns('',
 # Uncomment the next line to serve media files in dev.
 # urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-if settings.DEBUG:
-	import debug_toolbar
-	urlpatterns += patterns('', url(r'^__debug__/', include(debug_toolbar.urls)),)
+#if settings.DEBUG:
+#	import debug_toolbar
+#	urlpatterns += patterns('', url(r'^__debug__/', include(debug_toolbar.urls)),)
 #	urlpatterns += staticfiles_urlpatterns()

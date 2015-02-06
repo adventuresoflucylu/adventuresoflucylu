@@ -1,0 +1,36 @@
+{% extends "advbase.html" %}
+
+{% block content %}
+	<div id="aboutus">
+	<!-- Column three start -->
+		<section>
+			<h3>Aboutus: Lucy Lu Holder Page : </h3>
+			{% load staticfiles %}
+			<figure>
+				<a href="/books/tbd" style="border: none; height: 150px;">
+					<img src="/static/images/AdvLucyLu-cover.jpg" alt="Book cover for The Adventures of Lucy Lu "/>
+				</a>
+			</figure>
+			<p>
+				Hi. {{ user.username }}:
+			<br>
+				My name is Lucy Lu Rogers. I have a cute black button nose and black
+				hears of fur on my sides. I love to run with my Momma. I can run 3
+				miles every time we go for a run. I keep my nose to the ground and I am
+				always smelling for something to eat. &nbsp;I like to go out with my
+				Momma and Daddy to visit lots of boys and girls and their parents. I am
+				always looking for mischief to get into. I enjoy going shopping with my
+				Momma for new clothes to wear. You can say that I am a girlie girl. My
+				favorite colors are pink and purple. I can do tricks to, such as sit,
+				shake, lay down and roll over. I had my Momma write this book because
+				part of the money we raise will go to help other doggies and kitties in
+				no kill shelters. Thanks for visiting my page and please
+				keep&nbsp;checking back for &nbsp;new updates. Please make sure you
+				register so we can notify you of any updates.<br>
+				<br>
+				Love and doggie kisses,<br>
+				your new best friend,<br>
+			</p>
+		</section>
+	</div> <!-- col3 end -->
+{% endblock content %}

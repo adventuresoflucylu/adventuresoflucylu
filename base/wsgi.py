@@ -21,6 +21,9 @@ from sys import path
 SITE_ROOT = dirname(dirname(abspath(__file__)))
 path.append(SITE_ROOT)
 sys.path.append('/usr/local/adventuresoflucylu.com/home')
+sys.path.append('/usr/local/adventuresoflucylu.com/books')
+
+#NEW_RELIC_CONFIG_FILE=newrelic.ini newrelic-admin run-program command options
 
 # We defer to a DJANGO_SETTINGS_MODULE already in the environment. This breaks
 # if running multiple sites in the same mod_wsgi process. To fix this, use

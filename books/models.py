@@ -1,6 +1,14 @@
 from django.db import models
+from tinymce import models as tinymce_models
 
-class Book(models.Model):
+class AllBooks(models.Model):
+	name						= models.CharField(max_length=50)
+	number					= models.PositiveSmallIntegerField()
+	isbn						= models.CharField(max_length=13)
+	datepublished			= models.DateField(auto_now=False, auto_now_add=False)
+	content 					= tinymce_models.HTMLField()
+	
+class TheBigJob(models.Model):
 	name						= models.CharField(max_length=50)
 	number					= models.PositiveSmallIntegerField()
 	isbn						= models.CharField(max_length=13)
