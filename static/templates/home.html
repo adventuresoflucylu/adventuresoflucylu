@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block Header %}
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="page-header">
+	<div class="header-image">
+	<img src="/static/images/LucyLu_WebHeader.jpg" alt="Adv Lucy Lu header image" style="width: 100%; height: 225px;border-radius: 20px;">
+	</div>
+	<section>
+		<h2 style="font-size: 19px; text-align: center;">
+			Come read and see the adventures of the cutest button nose Basset Hound you'll ever meet.
+		</h2>
+		<p>
+        Guess What??? I'm in training to become a Therapy Doggie. Because I want to go to Veteran's hospitals/homes and Childerans hospitals
+		<br>
+				And see littlbe boys and girls. Wish me luck becuase my Daddy says I've been spoiled and need some discipline.
+		</p>          
+	</section>      
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <section>
+        	<h3>Book 1: The Big Job: </h3>
+        	{% load staticfiles %}
+        	<figure>
+        		<a href="/books/thebigjob" style="border: none; ">
+        			<img class= 'img-responsive' src="{% static 'images/AdvLucyLu-cover.jpg' %}" alt="Book cover for The Adventures of Lucy Lu "/>
+        		</a>
+        	</figure>
+        	<p>
+        		We are are now on:
+        		<br>
+        		Apple iBooks
+        		<br>
+        		Amazon Kindle
+        		<br>
+        		Soon to be on B&N Nook. And also on hardback on Lulu.com
+        	</p>
+        </section>
+    </div> <!-- col1 end -->
+    <div class="col-md-4">
+			<section>
+				<h3>Book 2: We're going to Ohio: </h3>
+				{% load staticfiles %}
+				<figure>
+					<a href="/books/tbd" style="border: none; ">
+						<img src="/static/images/AdvLucyLu-cover.jpg" alt="Book cover for The Adventures of Lucy Lu "/>
+					</a>
+				</figure>
+				<p>
+					Soon you can read about my travels from California to Ohio!
+					<br>
+				</p>
+			</section>
+    </div> <!-- col2 end -->
+    <div class="col-md-4">
+			<section>
+				<h3>Book 3: Boo Boo Bear : </h3>
+				{% load staticfiles %}
+					<figure>
+						<a href="/books/booboobear" style="border: none; ">
+						<img src="/static/images/AdvLucyLu-cover.jpg" alt="Book cover for The Adventures of Lucy Lu "/>
+						</a>
+					</figure>
+				<p>
+					Soon you can read how Lucy Lu meets her life long friend Maxwell "Boo Boo Bear".
+				</p>
+			</section>
+    </div> <!-- col3 end -->
+</div>
+{% endblock %}
