@@ -1,0 +1,28 @@
+{% extends "home.html" %}%}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+{% block content %}
+	<div class="book-container">
+<!-- 		<div id="col1"> -->
+	<!-- The Big Job start -->
+		<section>
+			<h3 class="center">Book 1: The Big Job:: </h3>
+			{% load staticfiles %}
+			<figure>
+				<a href="/books/thebigjob">
+					<img class= 'img-books' src="{% static 'img/AdvLucyLu-TheBigJob-Cover.jpg' %}" alt="Book cover for The Adventures of Lucy Lu "/>
+				</a>
+			</figure>
+			<p>
+				We are are now on:
+				<br>
+				Apple iBooks
+				<br>
+				Amazon Kindle
+				<br>
+				Soon to be on B&N Nook. And also on hardback on Lulu.com
+			</p>
+		</section>
+	</div> <!-- The Big Job end -->
+{% endblock %}

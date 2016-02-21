@@ -10,12 +10,6 @@
 .navbar-static-top {
 	margin-bottom: 0px !important;
 }
-
-.jumbotron {
-	background-color:#0E3D14;
-	color: #FFF;
-}
-
 {% endblock %}
 </style>
 
@@ -23,23 +17,26 @@
      
 {% block jumbotron %}
  {% if not request.user.is_authenticated %}
-
 <div class="jumbotron">
- <div class="container">
-	<div class="row">
-		<div class='col-sm-6'>
-		<h1>Try Django 1.8</h1>
-		<p>The MVP Landing project is designed to get your project started. The goal is to help you launch as soon as possible with the least amount of investment using time or money. Join Us today.</p>
-		<p>
-		<a class="btn btn-lg btn-primary" href="" role="button">Join Us &raquo;</a>
-		</p>
+		<div class="header-image">
+		<img src="{% static 'img/LucyLu_WebHeader.jpg' %}" alt="Adv Lucy Lu header image" style="width: 100%; height: 225px;border-radius: 20px;">
 		</div>
-		<div class='col-sm-6' >
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/2uLYO1LUf6Q" frameborder="0" allowfullscreen></iframe>
-
- 		</div>
+ </div>
+<div class="header-section">
+	<h2 style="font-size: 19px; text-align: center;">
+		Come read and see the adventures of the cutest button nose Basset Hound you'll ever meet.
+	</h2>
+	<p>
+       Guess What??? I'm in training to become a Therapy Doggie. Because I want to go to Veteran's hospitals/homes and Childerans hospitals
+	<br>
+			And see littlbe boys and girls. Wish me luck becuase my Daddy says I've been spoiled and need some discipline.
+	</p>          
+</div> 
+ {% else %}
+<div class="jumbotron-login">
+		<div class="header-image-login">
+		<img class="login" src="{% static 'img/LucyLu_WebHeader.jpg' %}" alt="Adv Lucy Lu header image" style="width: 500px; border-radius: 20px;">
 		</div>
-	</div>
  </div>
  {% endif %}
 {% endblock %}
@@ -49,7 +46,7 @@
 
 {% block content %}
  {% if request.user.is_authenticated %}
-<h1>You are logged in!</h1>
+<h1>You are logged in!...</h1>
 
 	{% if queryset %}
 	<h2>Welcome Staff</h2>
@@ -65,51 +62,68 @@
 	{% endif %}
 
  {% else %}
-<div class="row">
-
-  <div class="col-sm-3 pull-right">
-  	
-			<p class='lead text-align-center'>{{ title }}</p>
-
-			<form method='POST' action=''>{% csrf_token %}
-			{{ form|crispy }}
-
-			<input class='btn btn-primary' type='submit' value='Sign Up' />
-
-			</form>
-	</div>
-
-	<div class='col-sm-3'>
-<p class='lead text-align-center'>Django &amp; Bootstrap</p>
-			<img src='{% static "img/marketing1.jpg" %}' class='img-responsive' />
-</div>
-
-<div class='col-sm-3'>
-<p class='lead text-align-center'>Created for Starters 
-<br/>
-<span class='fa-stack fa-lg fa-5x'>
-<i class='fa fa-comment-o fa-stack-2x'></i>
-<i style='color:yellow;' class="fa fa-bolt fa-stack-1x"></i>
-
-</span>
-</p>
-
-</div>
-
-<div class='col-sm-3'>
-<p class='lead text-align-center'>Always Open Source <br/><br/>
-
-<span class="fa-stack fa-lg fa-5x">
-<i class="fa fa-circle-o-notch fa-stack-2x"></i>
-  <!-- <i class="fa fa-square-o fa-stack-2x"></i> -->
-  <i class="fa fa-github fa-stack-1x"></i>
-</span>
-</p>
-
-
-</div>
-
-
+<div class="row books">
+    <div class="col-md-4">
+        <section>
+        	<h3 class="book-title">
+            Book 1:
+            <br>
+            The Big Job
+          </h3>
+        	{% load staticfiles %}
+        	<figure>
+        		<a href="/books/thebigjob" style="border: none; ">
+        			<img class= 'img-responsive' src="{% static 'img/AdvLucyLu-TheBigJob-Cover.jpg' %}" alt="Book cover for The Adventures of Lucy Lu "/>
+        		</a>
+        	</figure>
+        	<p>
+        		We are are now on:
+        		<br>
+        		Apple iBooks
+        		<br>
+        		Amazon Kindle
+        		<br>
+        		Soon to be on B&N Nook. And also on hardback on Lulu.com
+        	</p>
+        </section>
+    </div> <!-- col1 end -->
+    <div class="col-md-4">
+      <section>
+        <h3 class="book-title">
+          Book 2:
+        <br>
+          We're going to Ohio
+        </h3>
+				{% load staticfiles %}
+				<figure>
+					<a href="/books/tbd" style="border: none; ">
+						<img class= 'img-responsive' src="{% static 'img/AdvLucyLu-cover.jpg' %}" alt="Book cover for The Adventures of Lucy Lu "/>
+					</a>
+				</figure>
+				<p>
+					Soon you can read about my travels from California to Ohio!
+					<br>
+				</p>
+			</section>
+    </div> <!-- col2 end -->
+    <div class="col-md-4">
+			<section>
+				<h3 class="book-title">
+          Book 3:
+        <br>
+          Rescue of Boo Boo Bear
+        </h3>
+				{% load staticfiles %}
+					<figure>
+						<a href="/books/booboobear" style="border: none; ">
+						<img class= 'img-responsive' src="{% static 'img/AdvLucyLu-cover.jpg' %}" alt="Book cover for The Adventures of Lucy Lu "/>
+						</a>
+					</figure>
+				<p>
+					Soon you can read how Lucy Lu meets her life long friend Maxwell "Boo Boo Bear".
+				</p>
+			</section>
+    </div> <!-- col3 end -->
 </div>
 {% endif %}
 

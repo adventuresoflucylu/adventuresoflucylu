@@ -9,9 +9,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}">
 
-    <title>{% block head_title %}MVP Landing{% endblock %}</title>
+    <title>{% block head_title %}Adventures of Lucy Lu{% endblock %}</title>
 
     {% include 'head_css.html' %}
 
@@ -26,16 +26,14 @@
   <body>
   {% include 'navbar.html' %}
 
-{% block jumbotron %}
+  {% block jumbotron %}
           
             {% endblock %}
     <div class="container">
-            
 
-          
-            {% block content %}
+  {% block content %}
 
-            {% endblock %}
+  {% endblock %}
               
 
     </div> <!-- /container -->
@@ -43,5 +41,12 @@
     {% include "javascript.html" %}
     
     
-  </body>
+  </body>    
+
+  <footer class="footer">
+      <div class="container">
+          <p class="text-muted"> The Adventures of Lucy Lu © 2010 info@adventuresoflucylu.com </p>
+      </div>
+  </footer>
+
 </html>

@@ -6,13 +6,14 @@ from django.contrib import admin
 
 urlpatterns = [
     # Examples:
-    url(r'^$', 'newsletter.views.home', name='home'),
-    url(r'^contact/$', 'newsletter.views.contact', name='contact'),
-    url(r'^about/$', 'trydjango18.views.about', name='about'),
-    # url(r'^blog/', include('blog.urls')),
+    url(r'^$', 'home.views.home', name='home'),
+    url(r'^contact/$', 'views.contact', name='contact'),
+    # url(r'^about/$', 'advllproject.views.about', name='about'),
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^accounts/', include('registration.backends.default.urls')),
+    url(r'^books/', include('books.urls')),
+    url(r'^aboutus/', include('aboutus.urls')),
 ]
 
 if settings.DEBUG:
