@@ -1,0 +1,254 @@
+.text-align-center {
+  text-align: center;
+}
+
+.og-price {
+	color:red;
+	text-decoration:line-through;
+}
+
+.fa-navbar-cart {
+	font-size: 18px;
+    vertical-align: middle;
+}
+
+
+.container-alert-flash {
+	position: absolute;
+    top: 10px;
+    z-index: 50000;
+    width: 100%;
+    right: 0%;
+    margin: 0px;
+    display:none;
+}
+
+.jumbotron {
+  margin-bottom: 10px;
+  background-color: #7BEFA5;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.jumbotron-login {
+width: 533px;
+border-radius: 20px;
+/* height: inherit; */
+margin-left: auto;
+margin-right: auto;
+margin-top: 5px;
+}
+
+.header-image-login {
+  background-color: #7BEFA5;
+  border-radius: 20px;
+  width: inherit;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#img .login {
+    height: inherit;
+    margin: auto;
+    width: 500px;
+  }
+
+
+#login-nav {
+/*    float: right;*/
+    text-align: right;
+}
+
+.header-section p{
+  padding-left: 10px;
+}
+
+.header-section h2{
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+
+.aboutus {
+  margin-left: auto;
+  margin-right: auto;
+}
+img .displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+}
+
+.header-section{
+  background-color: #D2A2EF;
+  margin-top: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.header-image{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.row .books, h3 {
+  background-color: #3B40B7;
+  color: #CFFF85;
+  font-size: 22px;
+}
+
+.book-title{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.img-books, .img {
+  /*height: 222px;*/
+}
+
+.books, .p {
+  color: #FDFBFB;
+}
+
+.book-container, .p {
+  color: white;
+}
+
+.book-container, .img-books, .h3 {
+  text-align: left;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  padding: 5px;
+  -WEbkit-box-flex: 1;
+}
+/*
+.aboutus, .bholder {
+    margin: 10px;
+}
+*/
+.right_news {
+    float: left;
+    position: relative;
+    width: 30%;
+    margin: 10px;
+}
+
+section {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    border-radius: 20px;
+}
+
+nav .container {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.dropdown-menu {
+  background-color: #B2C9EC;
+  width: 233px;
+  color: greenyellow;
+  }
+  
+input {
+    line-height: normal;
+    color: black;
+}
+
+nav {
+/*  margin: 100px auto;
+*/	text-align: center;
+}
+
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+	}
+
+
+nav ul {
+	background: #efefef; 
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #A3ECB6 0%, #efefef 100%);
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+
+	nav ul li {
+		float: left;
+	}
+  
+  a.my-dropdown-menu:hover {
+    background: #fff;
+  }
+		nav ul li:hover {
+			background: #3DA4FD;
+			background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+			background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+			/*background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);*/
+      background: -webkit-linear-gradient(top, #D8E5F3 16%,#7CE8CA 30%);
+		}
+
+		nav li:hover a {
+			color: #fff;
+	    background: #3DA4FD;
+			}
+
+		nav ul li:hover a {
+				color: #fff;
+			}
+		
+		nav ul li a {
+			display: block; 
+      padding: 25px 40px;
+			color: #3DA4FD; 
+      text-decoration: none;
+		}
+			
+		
+	nav ul ul {
+		background: #5f6975; 
+    border-radius: 0px;
+    padding: 0;
+    position: absolute; 
+    top: 100%;
+	}
+		nav ul ul li {
+			float: none; 
+			border-top: 1px solid #6b727c;
+			border-bottom: 1px solid #575f6a; position: relative;
+		}
+			nav ul ul li a {
+				padding: 15px 40px;
+				color: #fff;
+			}	
+				nav ul ul li a:hover {
+					background: #3DA4FD;
+				}
+		
+	nav ul ul ul {
+		position: absolute; left: 100%; top:0;
+	}
+		
